@@ -16,7 +16,6 @@ mydata %>%
 original_count <- nrow(mydata)
 #data exploration in age and hours per week because some values are unreasonable to be very low or high
 summary(mydata) # age 90 is found in age and 99 hours in hours per week
-write.table(as.data.frame(summary(mydata)),file = 'D:\\Data Science\\CETM-24 Data Science fundementals\\assignment 2\\summary.csv',sep = ',')
 upper_limit_age = 67 # full retirement age in USA where the data was collected
 
 h <- hist(hours.per.week, breaks = 15,col = "red", xlab = "hours per week", main = "Histogram with Normal curve")
