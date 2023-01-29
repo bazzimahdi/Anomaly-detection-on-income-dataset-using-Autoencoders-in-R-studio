@@ -50,7 +50,7 @@ early_stopping <- callback_early_stopping(monitor ='val_loss', patience = 6)
 
 # add checkpoint to save best model weights after each epoch
 checkpoint <- callback_model_checkpoint(
-  filepath = "D:\\Data Science\\CETM-24 Data Science fundementals\\assignment 2\\model.hdf5", 
+  filepath = "D:\\model\\model.hdf5", 
   save_best_only = TRUE, 
   save_freq = 'epoch',
   verbose = 1,
@@ -70,7 +70,7 @@ model %>%
   )
 
 # load the trained model to save time and memmory each time we run the code
-load_model_weights_tf(model, "D:\\Data Science\\CETM-24 Data Science fundementals\\assignment 2\\model.hdf5")
+load_model_weights_tf(model, "D:\\model\\model.hdf5")
 
 # calculate the mse for each instance in the data using apply function to create an iterator
 pred_train <- predict(model,y_train)
@@ -132,4 +132,4 @@ anomalies_test <- re_test %>% # create anomalies test subset
 anomalies_index_train <- as.numeric(rownames(anomalies_train)) # get the index of anomaly points in train subset
 anomalies_index_test <- as.numeric(rownames(anomalies_test)) # get the index of anomaly points in test subset
 mydata_anomalies <- mydata[append(anomalies_index_test,anomalies_index_train),] # get all anomalies in the original dataset by concatenating the indexes of train and test anomalies
-write.csv(mydata_anomalies,"D:\\Data Science\\CETM-24 Data Science fundementals\\assignment 2\\anomalies.csv")
+write.csv(mydata_anomalies,"D:\\data\\anomalies.csv")
