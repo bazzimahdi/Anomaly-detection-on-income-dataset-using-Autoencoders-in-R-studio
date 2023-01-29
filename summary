@@ -1,0 +1,7 @@
+"     age" " workclass" "    fnlwgt" " education" "educational.num" "marital.status" " occupation" "relationship" "    race" "   gender" " capital.gain" " capital.loss" "hours.per.week" "native.country" "   income"
+"" "Min.   :17.00  " "Length:48842      " "Min.   :  12285  " "Length:48842      " "Min.   : 1.00  " "Length:48842      " "Length:48842      " "Length:48842      " "Length:48842      " "Length:48842      " "Min.   :    0  " "Min.   :   0.0  " "Min.   : 1.00  " "Length:48842      " "Length:48842      "
+"" "1st Qu.:28.00  " "Class :character  " "1st Qu.: 117551  " "Class :character  " "1st Qu.: 9.00  " "Class :character  " "Class :character  " "Class :character  " "Class :character  " "Class :character  " "1st Qu.:    0  " "1st Qu.:   0.0  " "1st Qu.:40.00  " "Class :character  " "Class :character  "
+"" "Median :37.00  " "Mode  :character  " "Median : 178145  " "Mode  :character  " "Median :10.00  " "Mode  :character  " "Mode  :character  " "Mode  :character  " "Mode  :character  " "Mode  :character  " "Median :    0  " "Median :   0.0  " "Median :40.00  " "Mode  :character  " "Mode  :character  "
+"" "Mean   :38.64  " NA "Mean   : 189664  " NA "Mean   :10.08  " NA NA NA NA NA "Mean   : 1079  " "Mean   :  87.5  " "Mean   :40.42  " NA NA
+"" "3rd Qu.:48.00  " NA "3rd Qu.: 237642  " NA "3rd Qu.:12.00  " NA NA NA NA NA "3rd Qu.:    0  " "3rd Qu.:   0.0  " "3rd Qu.:45.00  " NA NA
+"" "Max.   :90.00  " NA "Max.   :1490400  " NA "Max.   :16.00  " NA NA NA NA NA "Max.   :99999  " "Max.   :4356.0  " "Max.   :99.00  " NA NA
